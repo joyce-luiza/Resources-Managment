@@ -67,7 +67,7 @@ Vá até a pasta client, abra um terminal e digite o seguinte comando:
 npm start
 ``` 
 
-Uma aplicação será iniciada em http://localhost:3000. Agora é só usar 
+Uma aplicação será iniciada em http://localhost:3000. Agora é só usar :)
 
 
 
