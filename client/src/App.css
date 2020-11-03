@@ -1,0 +1,60 @@
+body{
+    background-color: #181E24;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modal input, input{
+    display: block;
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border: none;
+    border-bottom: 2px solid white;
+    transition: 0.5s;
+    outline: none;
+    letter-spacing: 1px;
+}
+
+.modal input{
+    border: 1px solid #181E24;
+    color: black;
+}
+
+.modal select, select{
+    width: 100%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #ffffff;
+}
+
+.modal select{
+    border: 1px solid #181E24;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+table td, table th{
+    border-bottom: 1px solid #dddddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table tr:hover {
+    background-color: #485563;
+}
+
+table th{
+    padding: 12px 6;
+    color: white;
+    background-color: #2A333D;
+}
+
+.modal{
+    color: black;
+}
