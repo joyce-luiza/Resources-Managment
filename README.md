@@ -25,7 +25,7 @@ CREATE DATABASE resource_register;
 Acesse o banco de dados criado: 
 
 ```
-\c resources_register;
+\c resource_register;
 ```
 
 Crie a tabela: 
@@ -53,15 +53,22 @@ const pool = new Pool({
 
 ## Instalando as dependências
 
-Ainda na pasta server, abra um terminal e digite o seguinte comando:
+Ainda na pasta server, abra um terminal e digite os seguintes comandos:
 
 ```
 npm install
 ```
+```
+node index
+```
 
 ## Rodando a aplicação
 
-Vá até a pasta client, abra um terminal e digite o seguinte comando: 
+Vá até a pasta client, abra um terminal e digite os seguintes comandos: 
+
+```
+npm install
+```
 
 ```
 npm start
