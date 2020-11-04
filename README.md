@@ -76,6 +76,21 @@ npm start
 
 Uma aplicação será iniciada em http://localhost:3000. Agora é só usar :)
 
+## Teste Automatizado
+
+Vá para a pasta test, abra um terminal, e digite o comando: 
+
+```
+npm install
+```
+
+Ainda no terminal, inicie os teste com o comando:
+
+```
+npm test
+```
+
+
 
 
 
