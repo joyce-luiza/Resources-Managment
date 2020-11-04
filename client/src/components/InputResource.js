@@ -27,10 +27,10 @@ const InputResource = () => {
             <form className="mt-5" onSubmit={onSubmitForm}>
                 <div className="form-group">
                     <label for="name">Resource Name</label>
-                    <input type="text" required value={name} onChange={e => setName(e.target.value)}></input>
+                    <input type="text" className="form-control" required value={name} onChange={e => setName(e.target.value)}></input>
                 </div>
                 <div className="form-group">
-                    <label for="type">Resource Type</label>
+                    <label for="type">Tipo de Recurso</label>
                     <select className="form-control" value={type} required onChange={e => setType(e.target.value)}>
                         <option value="DB">DB</option>
                         <option value="API">API</option>
@@ -40,7 +40,7 @@ const InputResource = () => {
                 </div>
                 <div className="form-group">
                     <label for="date">Date</label>
-                    <input type="text" readOnly={true} value={creation_date}></input>
+                    <input type="text" className="form-control" readOnly={true} value={creation_date}></input>
                 </div>            
                 <button className="btn btn-success">Add</button>
             </form>

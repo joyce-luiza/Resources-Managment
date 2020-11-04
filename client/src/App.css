@@ -4,7 +4,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.modal input, input{
+.modal input{
     display: block;
     width: 100%;
     background-color: transparent;
@@ -21,16 +21,17 @@ body{
     color: black;
 }
 
-.modal select, select{
+.modal select{
     width: 100%;
     padding: 16px 20px;
     border: none;
     border-radius: 4px;
     background-color: #ffffff;
+    border: 1px solid #181E24;
 }
 
-.modal select{
-    border: 1px solid #181E24;
+.modal{
+    color: black;
 }
 
 table{
@@ -55,6 +56,3 @@ table th{
     background-color: #2A333D;
 }
 
-.modal{
-    color: black;
-}

@@ -1,8 +1,10 @@
 const express = require("express");
 const router = express.Router();
 
+const pool = require('../db');
+
 router
-.route()
+.route("/")
 //create resource
 .post(async (req, res) => {
     try {
@@ -11,7 +13,7 @@ router
         [name, type, creation_date]);
         res.json(newResource.rows[0]);
     } catch (err) {
-        console.log(err.message);
+        console.log("The item could not be added!" + err.message);
     }
 })
 //get all resources
@@ -20,7 +22,7 @@ router
         const allResources = await pool.query("SELECT * FROM RESOURCES");
         res.json(allResources.rows);
     } catch (err) {
-        console.log(err.message);
+        console.log("The itens could not be found!" + err.message);
     }
 });
 
@@ -33,7 +35,7 @@ router
         const resource = await pool.query("SELECT * FROM resources WHERE resource_id = $1", [id]);
         res.json(resource.rows[0]);
     } catch (err) {
-        console.log(err);
+        console.log("The itens could not be found!" + err.message);
     }
 })
 //uptade a resource 
@@ -42,9 +44,9 @@ router
         const {id} = req.params;
         const {name, type} = req.body;
         const updateResource = await pool.query("UPDATE resources SET name = $1, type = $2 WHERE resource_id = $3", [name, type, id]);
-        res.json("Resource was updated");
+        res.json("The item was updated!");
     } catch (err) {
-        console.log(err.message);
+        console.log("The item could not be changed!" + err.message);
     }
 })
 //delete a resource
@@ -52,10 +54,10 @@ router
     try {
         const {id} = req.params;
         const deleteResource = await pool.query("DELETE FROM resources WHERE resource_id = $1", [id]);
-        res.json("Resource was deleted");
+        res.json("The item was deleted!");
     } catch (err) {
-        console.log(err.message);
+        console.log("Could not delete item!" + err.message);
     }
 });
 
-module.exports = router;
+modules.exports = router;
