@@ -13,25 +13,25 @@ Para iniciar a aplicação, é preciso ter os seguintes softwares instalados:
 Após a instalação do Postgres, inicie o programa e insira sua senha:
 
 ```
-psql -U postgres
+# psql -U postgres
 ```
 
 Crie o banco de dados:
 
 ```
-CREATE DATABASE resource_register;
+# CREATE DATABASE resource_register;
 ```
 
 Acesse o banco de dados criado: 
 
 ```
-\c resource_register;
+# \c resource_register;
 ```
 
 Crie a tabela: 
 
 ```
-CREATE TABLE resources(
+# CREATE TABLE resources(
     resource_id SERIAL PRIMARY KEY,
     name VARCHAR(255),
     type VARCHAR(255),
@@ -56,10 +56,10 @@ const pool = new Pool({
 Ainda na pasta server, abra um terminal e digite os seguintes comandos:
 
 ```
-npm install
+$ npm install
 ```
 ```
-node index
+$ node index
 ```
 
 ## Rodando a aplicação
@@ -67,11 +67,11 @@ node index
 Vá até a pasta client, abra um terminal e digite os seguintes comandos: 
 
 ```
-npm install
+$ npm install
 ```
 
 ```
-npm start
+$ npm start
 ``` 
 
 Uma aplicação será iniciada em http://localhost:3000. Agora é só usar :)

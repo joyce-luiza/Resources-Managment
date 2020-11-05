@@ -60,4 +60,4 @@ router
     }
 });
 
-modules.exports = router;
+module.exports = router;
