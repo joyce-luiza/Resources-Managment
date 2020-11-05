@@ -81,13 +81,13 @@ Uma aplicação será iniciada em http://localhost:3000. Agora é só usar :)
 Vá para a pasta test, abra um terminal, e digite o comando: 
 
 ```
-npm install
+$ npm install
 ```
 
 Ainda no terminal, inicie os teste com o comando:
 
 ```
-npm test
+$ npm test
 ```
 
 
